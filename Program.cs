@@ -112,14 +112,14 @@ namespace BM_kozmondasok
             sor2 = be2.ReadLine();
             while (sor1 != null)
             {
-                reszek = sor1.Split('.');
+                reszek = sor1.Split('\n');
                 list1.Add(reszek[0]);
                 sor1 = be1.ReadLine();
             }
             be1.Close();
             while (sor2 != null)
             {
-                reszek = sor2.Split('.');
+                reszek = sor2.Split('\n');
                 list2.Add(reszek[0]);
                 sor2 = be2.ReadLine();
             }
@@ -130,6 +130,23 @@ namespace BM_kozmondasok
             egyesitettlista.Sort();
             foreach(string s in egyesitettlista)
                 Console.WriteLine(s);
+            int spacenelkuli = 0;
+            foreach (var s in egyesitettlista)
+            {
+                foreach (var s2 in s)
+                {
+                    if(s2 != ' ')
+                    spacenelkuli++;
+                }
+            }
+            Console.WriteLine($"A nem szóköz karakterek száma: {spacenelkuli}");
+
+            StreamWriter ki = new StreamWriter("kozmondasok.txt");
+            foreach (var s in egyesitettlista)
+                { ki.WriteLine(s); }
+            ki.WriteLine("-------------------------------");
+            ki.WriteLine($"A nem szóköz karakterek száma: {spacenelkuli}");
+            ki.Close();
         }
 
         static void Main(string[] args)
