@@ -1,0 +1,7 @@
+H:\Github\BM-kozmondasok\BM-kozmondasok\bin\Debug\BM-kozmondasok.exe.config
+H:\Github\BM-kozmondasok\BM-kozmondasok\bin\Debug\BM-kozmondasok.exe
+H:\Github\BM-kozmondasok\BM-kozmondasok\bin\Debug\BM-kozmondasok.pdb
+H:\Github\BM-kozmondasok\BM-kozmondasok\obj\Debug\BM-kozmondasok.csproj.AssemblyReference.cache
+H:\Github\BM-kozmondasok\BM-kozmondasok\obj\Debug\BM-kozmondasok.csproj.CoreCompileInputs.cache
+H:\Github\BM-kozmondasok\BM-kozmondasok\obj\Debug\BM-kozmondasok.exe
+H:\Github\BM-kozmondasok\BM-kozmondasok\obj\Debug\BM-kozmondasok.pdb
